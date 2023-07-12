@@ -1,0 +1,15 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" opened>
+        <mat-nav-list>
+            <a mat-list-item routerLink="users">Manage users</a>
+            <mat-divider></mat-divider>
+            <a mat-list-item routerLink="products">Manage products</a>
+            <mat-divider></mat-divider>
+
+        </mat-nav-list>
+        
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,9 @@
+<p>Counter value : {{ counter }}</p>
+<!--Data binding / interpolation-->
+<input type="number" value="{{counter}}"><br>
+<!--Property binding-->
+<input type="number" [value]="counter"><br>
+<!--Event binding-->
+<button class="btn btn-primary" (click)="incrementCounter()" >Increase </button>
+<!--Two way binding-->
+<input type="number" [(ngModel)]="counter">

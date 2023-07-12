@@ -1,0 +1,9 @@
+<!--data binding-->
+<h3>{{appTitle}}</h3>
+<!--property binding-->
+<h4 [innerHTML]="headingh1"></h4>
+<p>App count value is {{appCount}}</p>
+<button (click)="changeCounterVisibility()">Show / Hide counter</button>
+<div *ngIf="showCounter">
+    <app-counter [counter]="appCount" (myEvent)="handleEvent($event)"></app-counter>
+</div>
